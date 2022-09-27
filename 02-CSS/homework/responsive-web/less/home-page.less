@@ -1,4 +1,7 @@
 // Conteindo del Home
+.main-image{
+  .home-page-styles();
+}
 
 .home {
 
@@ -16,7 +19,7 @@
 
   .music-images {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     width: 100%;
 
     img {
@@ -24,6 +27,24 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    
+  }
+
+  @media screen and (max-width: 500px){
+    .music-images{
+      flex-direction: column;
+      align-items: center;
+    }
+    .auricular{
+      width: 98% !important;
+    }
+  }
+  
+
+  .ondas, .tecnologia{
+    @media screen and (max-width: 500px){
+      display: none;
     }
   }
 
@@ -58,8 +79,21 @@
       }
 
       .btn {
+        .registrate-btn-styles(#6c757d, 15px);
+        color: black;
+        padding: 5px 10px;
+        display: inline;
+        border-radius: 5px;
       }
+
+      .btn:hover{
+        background-color: #4ca847;
+        color: white;
+      }
+
+      
     }
+
 
     .actual-img {
       width: 46%;
@@ -72,4 +106,25 @@
       }
     }
   }
+
+  @media screen and (max-width: 500px) {
+    .actual {
+      flex-direction: column-reverse !important;
+    }
+    .actual-img{
+      width: 100% !important;
+    }
+  
+    .actual-img > img {
+      width: 100% !important;
+    }
+  
+    .actual-text {
+      width: 100% !important;
+      text-align: justify;
+      padding: 5px;
+    }
+  }
 }
+
+
