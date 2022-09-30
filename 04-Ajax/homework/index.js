@@ -20,16 +20,12 @@ $('#search').click(function(){
 
 $('#delete').click(function(){
     let inputDelete = $('#inputDelete')
-    // $.delete(`http://localhost:5000/amigos/${inputDelete[0].value}`, function(data){
-    //     $('#success').text('Borrado con exito')
-    // })
-
     $.ajax({
         url: `http://localhost:5000/amigos/${inputDelete[0].value}`,
         type: 'DELETE',
         dataType: 'json',
         success: function(data) {
-            $('#success').text('Borrado con exito');
+            $('#success').text(`Amigo borrado con exito`);
         },
     });
 
