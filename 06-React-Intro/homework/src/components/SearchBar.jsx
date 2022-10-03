@@ -5,7 +5,8 @@ export default function SearchBar({onSearch}) {
   
   return (
     <div>
-      <button onClick={() => onSearch("Denver")}>Agregar</button>
+      <input type="text" />
+      <button onClick={() => onSearch(document.querySelector('input').value)}>Agregar</button>
     </div>
   )
 };
