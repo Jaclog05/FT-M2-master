@@ -6,11 +6,15 @@
     font-weight: bold;
     color: white;
     border: 2px solid white;
+    margin: 10px;
+    box-shadow: 10px -5px 10px 2px black
+
 }
 
 .titleAndButtonWrapper > *{
     padding: 0px;
-    margin: 0px
+    margin: 0px;
+    font-family: 'Segoe UI'
 }
 
 .titleAndButtonWrapper{
