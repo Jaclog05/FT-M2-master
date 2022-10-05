@@ -9,8 +9,8 @@ export default function Card({max, min, name, img, onClose}) {
         <h2>{name}</h2>
         <button className={styles.button} onClick={onClose}>×</button>
       </div>
-      <h4>Min: {min}</h4>
-      <h4>Max: {max}</h4>
+      <h4>Min: {min}°C</h4>
+      <h4>Max: {max}°C</h4>
       <img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt=""/>
     </div>
   )

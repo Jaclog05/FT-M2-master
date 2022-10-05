@@ -2,10 +2,9 @@
 .component {
     border-radius: 10px;
     background: linear-gradient(15deg, white, green);
-    width: 40%;
+    width: 30%;
     font-weight: bold;
     color: white;
-    border: 2px solid white;
     margin: 10px;
     box-shadow: 10px -5px 10px 2px black
 
