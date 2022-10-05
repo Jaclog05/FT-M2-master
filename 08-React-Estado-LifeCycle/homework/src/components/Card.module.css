@@ -1,0 +1,42 @@
+
+.component {
+    border-radius: 10px;
+    background: linear-gradient(15deg, white, green);
+    width: 40%;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    margin: 10px;
+    box-shadow: 10px -5px 10px 2px black
+
+}
+
+.titleAndButtonWrapper > *{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI'
+}
+
+.titleAndButtonWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px;
+    padding: 4px;
+}
+
+.button{
+    border-radius: 50%;
+    border: 1px solid green;
+    color: green;
+    font-weight: bold;
+    height: fit-content;
+    padding: 0px 7px;
+    font-size: 20px
+}
+
+.button:hover{
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+}

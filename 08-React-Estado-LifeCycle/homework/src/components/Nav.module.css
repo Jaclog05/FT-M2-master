@@ -1,0 +1,20 @@
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 2px solid black
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.left > img {
+    margin-right: 5px;
+}
