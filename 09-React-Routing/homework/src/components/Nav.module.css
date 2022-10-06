@@ -1,0 +1,45 @@
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.about {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI';
+    padding: 5px 2px
+}
+
+.about:hover {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 5px 2px;
+    border-radius: 3px;
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.left > img {
+    margin-right: 5px;
+}
+
+.left > h4 {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI';
+}
+
+h4:hover{
+    text-decoration: none;
+}

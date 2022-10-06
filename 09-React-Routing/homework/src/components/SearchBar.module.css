@@ -1,0 +1,21 @@
+
+.input {
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.button {
+    border-radius: 10px;
+    font-weight: bold;
+    color: green;
+    border: 2px solid green;
+    background-color: white;
+    margin: 3px
+}
+
+.button:hover{
+    background-color: green;
+    color: white;
+    transform: scale(1.03);
+}

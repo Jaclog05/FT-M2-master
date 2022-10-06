@@ -1,19 +1,22 @@
 import React from 'react';
-import './Cards.css';
-
-import Card from './Card.jsx';
+import Card from './Card.jsx'
+import styles from './Cards.module.css'
 
 export default function Cards({cities, onClose}) {
+  // acá va tu código
+  // tip, podés usar un map
+  //console.log(cities)
   return (
-    <div className='cards'>
-      {cities.map(c => <Card
-          key={c.id}
-          max={c.max}
-          min={c.min}
-          name={c.name}
-          img={c.img}
-          onClose={() => onClose(c.id)}
-        /> )}
-    </div>
-  );
-}
+      <div className={styles.component}>
+        {cities.length ? cities.map((city, idx) => <Card
+          name={city.name}
+          max={city.max}
+          min={city.min}
+          img={city.img}
+          onClose={() => onClose(city.id)}
+          id = {city.id}
+          key={idx}
+        />) : <h2>No se recibieron ciudades aún</h2>}
+      </div>
+  )
+};

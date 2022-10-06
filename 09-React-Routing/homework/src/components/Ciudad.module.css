@@ -1,0 +1,19 @@
+.component {
+    border-radius: 10px;
+    background: linear-gradient(15deg, white, green);
+    width: 30%;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+    box-shadow: 10px -5px 10px 2px black;
+    padding: 10px;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    height: 90vh;
+    justify-content: center;
+    align-items: flex-start;
+}
